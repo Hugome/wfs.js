@@ -1,23 +1,16 @@
 {
   "name": "wfs.js",
-  "version": "",
+  "version": "1.0.0",
   "license": "",
-  "description": "",
+  "description": "wfs.js",
   "homepage": "https://github.com/ChihChengYang",
   "authors": "Jeff Yang",
-  "repository": {
-    "type": "",
-    "url": ""
-  },
-  "bugs": {
-    "url": ""
-  },
   "main": "./dist/wfs.js",
   "private": false,
   "scripts": {
     "clean": "rimraf dist/*",
     "prebuild": "npm run clean & npm run test",
-    "build": "npm run babel && browserify -t browserify-versionify -t [babelify] -s Wfs src/index.js --debug | exorcist dist/wfs.js.map -b . > dist/wfs.js",     
+    "build": "npm run babel && browserify -t browserify-versionify -t [babelify] -s Wfs src/index.js --debug | exorcist dist/wfs.js.map -b . > dist/wfs.js",
     "babel": "babel src --out-dir lib"
   },
   "devDependencies": {
